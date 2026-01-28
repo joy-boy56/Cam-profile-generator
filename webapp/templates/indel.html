@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cam Profile Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Cam Profile Generator</h1>
+        <p>Knife-Edge Follower · Motion-Based Cam Design</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Cam Design Parameters</h2>
+
+            <form method="POST">
+                <div>
+                    <label>Stroke / Lift (mm)</label>
+                    <input type="number" step="0.1" name="stroke" value="30" required>
+                </div>
+
+                <div>
+                    <label>Base Circle Radius (mm)</label>
+                    <input type="number" step="0.1" name="baseRadius" value="50" required>
+                </div>
+
+                <div>
+                    <label>Rise Angle (°)</label>
+                    <input type="number" step="0.1" name="riseAngle" value="120" required>
+                </div>
+
+                <div>
+                    <label>Dwell-1 Angle (°)</label>
+                    <input type="number" step="0.1" name="dwell1Angle" value="30" required>
+                </div>
+
+                <div>
+                    <label>Return Angle (°)</label>
+                    <input type="number" step="0.1" name="returnAngle" value="120" required>
+                </div>
+
+                <div>
+                    <label>Dwell-2 Angle (°)</label>
+                    <input type="number" step="0.1" name="dwell2Angle" value="30" required>
+                </div>
+
+                <div>
+                    <label>Motion Law (Rise)</label>
+                    <select name="motionLawRise">
+                        <option>SHM</option>
+                        <option>Uniform Velocity</option>
+                        <option>Uniform Acceleration</option>
+                        <option>Cycloidal</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Motion Law (Return)</label>
+                    <select name="motionLawReturn">
+                        <option>SHM</option>
+                        <option>Uniform Velocity</option>
+                        <option>Uniform Acceleration</option>
+                        <option>Cycloidal</option>
+                    </select>
+                </div>
+
+
+                <div class="full">
+                    <button class="btn" type="submit">
+                        Generate Cam Profile
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <span>Cam Profile Generator</span> · Web-based Mechanical Design Tool
+    </footer>
+
+</body>
+
+</html>
