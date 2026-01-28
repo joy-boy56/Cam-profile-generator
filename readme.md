@@ -101,6 +101,10 @@ It behaves like a **desktop engineering tool** and does not require an internet 
    - Displacement diagram
    - Pitch curve
    - Cam profile
+6. Export into csv or dxf file
+   - export the file into csv or dxf file into desired location 
+   - Import the file into any CAD softwares for 3D output
+   
 
 ---
 
